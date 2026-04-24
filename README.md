@@ -86,6 +86,8 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 │   ├── components/
 │   │   ├── ui/                 # shadcn/ui components (auto-generated)
 │   │   └── shared/             # Reusable custom components
+│   ├── config/
+│   │   └── constants/          # App-wide constants (routes, endpoints, etc.)
 │   ├── hooks/                  # Custom React hooks
 │   ├── lib/
 │   │   ├── supabase/
