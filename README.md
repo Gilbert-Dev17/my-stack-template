@@ -79,32 +79,45 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ├── src/
 │   ├── app/                    # Next.js App Router
 │   │   ├── (auth)/             # Authentication route group
+│   │   │   ├── sign-in/         # Sign-in page
+│   │   │   └── sign-up/         # Sign-up page
 │   │   ├── (dashboard)/        # Dashboard route group
+│   │   │   ├── layout.tsx      # Dashboard layout
+│   │   │   └── page.tsx        # Dashboard home page
 │   │   ├── globals.css         # Global styles and Tailwind imports
 │   │   ├── layout.tsx          # Root layout
 │   │   └── page.tsx            # Home page
 │   ├── components/
 │   │   ├── ui/                 # shadcn/ui components (auto-generated)
+│   │   │   └── button.tsx      # Example UI component
 │   │   └── shared/             # Reusable custom components
 │   ├── config/
 │   │   └── constants/          # App-wide constants (routes, endpoints, etc.)
 │   ├── hooks/                  # Custom React hooks
 │   ├── lib/
-│   │   ├── supabase/
+│   │   ├── actions/            # Server actions
+│   │   ├── services/           # Business logic and API services
+│   │   ├── supabase/           # Supabase client configuration
 │   │   │   ├── client.ts       # Browser-side Supabase client
 │   │   │   ├── server.ts       # Server-side Supabase client
+│   │   │   ├── queries.ts      # Database query functions
 │   │   │   └── proxy.ts        # Middleware/proxy Supabase client
-│   │   └── utils.ts            # shadcn utility (cn function)
+│   │   └── utils.ts            # Utility functions (cn function, etc.)
 │   ├── types/                  # Global TypeScript types and interfaces
 │   └── utils/                  # Custom helper functions
 ├── .env.example                # Environment variable template
 ├── components.json             # shadcn/ui configuration
+├── eslint.config.mjs           # ESLint configuration
 ├── next.config.ts              # Next.js configuration
+├── postcss.config.mjs          # PostCSS configuration
+├── proxy.ts                    # Proxy configuration
+├── pnpm-workspace.yaml         # pnpm workspace configuration
 ├── tailwind.config.ts          # Tailwind CSS configuration
 └── tsconfig.json               # TypeScript configuration
 ```
 
 ---
+
 
 ## Environment Variables
 
